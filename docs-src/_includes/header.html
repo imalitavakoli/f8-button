@@ -1,0 +1,77 @@
+<nav class="navbar navbar-inverse navbar-fixed-top"  id="header">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ '/index.html' | replace_first:'/', page.root_dir}}">{{ site.title | escape }}</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse" style="font-size: 14px;">
+      <ul class="nav navbar-nav" data-sm-skip>
+        {% for group in site.data.sections %}
+          {% if group.type == "primary"  %}
+            {% if group.pages.size > 1  %}
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ group.first[1] }} <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                {% for page_in_group in group.pages %}
+                  {% for page_in_site in site.pages %}
+                    {% if page_in_site.title == page_in_group.title %}
+                      <li><a href="{{ page_in_site.url | replace_first:'/', page.root_dir }}">{{ page_in_site.title | escape }}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              </ul>
+            </li>
+            {% else %}
+              {% for page_in_site in site.pages %}
+                {% if page_in_site.title == group.pages.first.title %}
+                  <li><a href="{{ page_in_site.url | replace_first:'/', page.root_dir }}">{{ page_in_site.title | escape }}</a></li>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+      {% if site.download_url %}
+      {% if site.coming_soon == false %}<a class="btn btn-default navbar-btn navbar-right" href="{{ site.download_url }}" target="_blank" role="button">Buy now</a>{% endif %}
+      {% endif %}
+
+      {% for secondary_group in site.data.sections %}
+        {% if secondary_group.type == "secondary"  %}
+          <ul class="nav navbar-nav navbar-right" data-sm-skip>
+            {% for group in site.data.sections %}
+              {% if group.type == "secondary"  %}
+                {% if group.pages.size > 1  %}
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ group.first[1] }} <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    {% for page_in_group in group.pages %}
+                      {% for page_in_site in site.pages %}
+                        {% if page_in_site.title == page_in_group.title %}
+                          <li><a href="{{ page_in_site.url | replace_first:'/', page.root_dir }}">{{ page_in_site.title | escape }}</a></li>
+                        {% endif %}
+                      {% endfor %}
+                    {% endfor %}
+                  </ul>
+                </li>
+                {% else %}
+                  {% for page_in_site in site.pages %}
+                    {% if page_in_site.title == group.pages.first.title %}
+                      <li><a href="{{ page_in_site.url | replace_first:'/', page.root_dir }}">{{ page_in_site.title | escape }}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>

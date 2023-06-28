@@ -1,0 +1,93 @@
+# - group: Item Name
+#   type: primary
+#   pages:
+#     - title: Sub Item Name
+#       sections:
+#         - title: Heading 1
+#         - title: Heading 2
+#
+#     - title: Sub Item Name
+#       sections:
+#         - title: Heading 1
+#         - title: Heading 2
+#
+#
+#
+#
+# - group: Item Name
+#   type: secondary
+#   pages:
+#     - title: Sub Item Name
+#       sections:
+#         - title: Heading 1
+#         - title: Heading 2
+
+
+
+
+- group: Getting Started
+  type: primary
+  pages:
+    - title: Introduction
+      sections:
+        - title: Introduction
+        - title: Quick Start
+        - title: Starter Template
+        - title: BEM Methodology Mindset
+        - title: Optimization Tips
+
+    - title: Compatibility
+      sections:
+        - title: Supported Browsers
+        - title: Box-sizing
+        - title: Initializing JavaScript Blocks manually
+
+
+
+
+- group: Blocks
+  type: primary
+  pages:
+    - title: Browsehappy
+      sections:
+        - title: Usage
+
+    - title: Button
+      sections:
+        - title: CSS Custom Properties
+        - title: Simple Buttons
+        - title: Modifiers
+        - title: Holder, Loader
+        - title: Head, Body, Label, Icon
+        - title: Group
+        - title: All Modifiers Together
+        - title: Combine with Other Blocks
+
+    - title: Icon
+      sections:
+        - title: Requirements
+        - title: CSS Custom Properties
+        - title: Simple Icons
+        - title: Modifiers
+        - title: All Modifiers Together
+        - title: Combine with Other Blocks
+
+
+
+
+- group: Utilities
+  type: primary
+  pages:
+    - title: Utilities
+      sections:
+        - title: Color
+        - title: Positioning
+        - title: Dimensions
+        - title: Margin
+        - title: Padding
+        - title: Bg & Border
+        - title: Text
+        - title: Box utilities
+        - title: State & Animated Utilities
+        - title: Utilities
+        - title: Responsive utilities

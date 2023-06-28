@@ -1,0 +1,100 @@
+// Variables - Basic settings.
+// @copyright 2022 MyThemeIsReady. All Rights Reserved.
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Color
+
+// Var Sets
+$color-fff:                                           #fff !default;
+$color-000:                                           #000 !default;
+$color-black:                                         #333 !default;
+
+$color-indigo:                                        #5c6bc0 !default;
+
+$color-neutral:                                       #888 !default;
+$color-neutral-bg:                                    rgba(136, 136, 136, 0.2) !default;
+$color-neutral-hr:                                    rgba(136, 136, 136, 0.4) !default;
+
+
+// Root Bases
+$selection-bg-color-base:                             rgba(136, 136, 136, 0.2);
+
+$headings-color-base:                                 $color-000;
+$text-color-base:                                     $color-black;
+$text-link-color-base:                                $color-indigo;
+
+$bg-color-base:                                       $color-fff;
+
+
+// Usefuls
+$selection-bg-color:                                  var(--f8-selection-bg-color) !default;
+
+$headings-color:                                      var(--f8-headings-color) !default;
+$text-color:                                          var(--f8-text-color) !default;
+$text-link-color:                                     var(--f8-text-link-color) !default;
+
+$bg-color:                                            var(--f8-bg-color) !default;
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Typography
+
+// Var Sets
+$font-family-sans-serif:                              'Roboto', Arial, sans-serif !default;
+$font-family-serif:                                   'Roboto Slab', Georgia, 'Times New Roman', Times, serif !default;
+$font-family-monospace:                               Menlo, Monaco, Consolas, "Courier New", monospace !default; // Fonts for `<code>`, `<kbd>`, and `<pre>`.
+
+$headings-font-weight:                                500 !default;
+$headings-line-height:                                1.2 !default;
+
+$font-size-h1:                                        3rem !default;            // ~48px
+$font-size-h2:                                        2.5rem !default;          // ~40px
+$font-size-h3:                                        2rem !default;            // ~32px
+$font-size-h4:                                        1.5rem !default;          // ~24px
+$font-size-h5:                                        1rem !default;
+$font-size-h6:                                        .75rem !default;          // ~12px
+
+
+// Root Bases
+$headings-font-family-base:                           'Roboto Condensed', Arial, sans-serif !default;
+
+$font-family-base:                                    $font-family-sans-serif !default;
+$font-size-base:                                      16px !default; // We don't set `font-size` to `1rem` and assume the browser's default `font-size` is `16px`! We force it to be `16px` for our framework's styles.
+
+$line-height-base:                                    1.5 !default; // 20/14
+
+
+// Usefuls
+$headings-font-family:                                var(--f8-headings-font-family) !default;
+
+$font-family:                                         var(--f8-font-family) !default;
+$font-size:                                           var(--f8-font-size) !default;
+
+$line-height:                                         var(--f8-line-height) !default;
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Spacing
+
+// Root Bases
+$spacer-base:                                         1rem !default;
+
+
+// Usefuls
+$spacer:                                              var(--f8-spacer) !default;

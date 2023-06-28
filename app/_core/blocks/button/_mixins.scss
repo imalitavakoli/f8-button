@@ -1,0 +1,78 @@
+// Mixins - Useful mixins designed to reduce duplication.
+// @copyright 2022 MyThemeIsReady. All Rights Reserved.
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Color
+
+@mixin f8-button-color($color, $bg-color, $bg-hover-color) {
+  &,
+  &:link,
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $bg-color;
+    color: $color;
+  }
+
+  &:hover,
+  &:active,
+  &.f8-button--state-active,
+  &.f8-button--state-loading,
+  .f8-nav &.current {
+    background-color: $bg-hover-color;
+  }
+
+  // Modifier Specific Styles: .f8-button--effect-light, .f8-button--effect-outline, .f8-button--effect-fader
+  &.f8-button--effect-light,
+  &.f8-button--effect-outline,
+  &.f8-button--effect-fader {
+    border-color: $bg-color;
+    background-color: transparent;
+    color: $bg-hover-color;
+
+    &:hover,
+    &:active,
+    &.f8-button--state-active,
+    &.f8-button--state-loading,
+    .f8-nav &.current {
+      background-color: $bg-color;
+    	color: $color;
+    }
+  }
+
+  // Modifier Specific Styles: .f8-button--effect-3d
+  &.f8-button--effect-3d {
+    background-color: $bg-color;
+    box-shadow: 0 4px $bg-hover-color;
+  }
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Size
+
+@mixin f8-button-size($font-size, $padding-x, $padding-y) {
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
+
+
+  //////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////
+  /// Element(s): Head
+
+  .f8-button__head {
+    font-size: calc(#{$font-size} * 1.5);
+  }
+}

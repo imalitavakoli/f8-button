@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+bower_components
+
+# compiled output
+/preview
+/.tmp
+/docs
+
+# others
+node_modules.rar
+node_modules.zip
+
+# System Files
+.DS_Store
+Thumbs.db

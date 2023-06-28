@@ -1,0 +1,23 @@
+// Vendor - 3rd Party sass libraries.
+// @copyright 2022 MyThemeIsReady. All Rights Reserved.
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+/// Font Awesome
+
+$fa-font-path:   '../fonts/fontawesome';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+/// Bootstrap Icons
+
+$bootstrap-icons-font-dir: '../fonts/bootstrapicons';
+@import 'node_modules/bootstrap-icons/font/bootstrap-icons.scss';

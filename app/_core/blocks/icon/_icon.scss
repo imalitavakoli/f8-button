@@ -1,0 +1,740 @@
+// f8-icon - Framework8 icon block
+// @copyright 2022 MyThemeIsReady. All Rights Reserved.
+//
+// Some SVG icons which are embedded into the DOM automatically, so that they
+// can be customized by CSS. It includes some useful icons which you cannot find
+// in fontawsome or other places easily. It can also accept your own images or
+// icons, and apply its effects on your custom SVG, GIF, or JPG images.
+//
+// NOTE: This block needs the global `box-sizing` value to be `border-box`. If
+// it's going to be used in a project that this is not the case, then make sure
+// to set the `box-sizing` for all of the elements inside of the block (and also
+// the elements that are not inside of the block itself, if there's any elements
+// like so) to `border-box`.
+//
+//
+// Requirements:
+// - Root Custom Props:       ../_root.scss
+// - Variables:               ../_variables.scss
+// - Functions:               ../_functions.scss
+//
+// Goes well with:
+// - Utils:                   ../utils/_utils.scss
+// - Link:                    ../link/_link.scss
+// - List:                    ../list/_list.scss
+//
+//
+//
+//
+// @example
+// <!-- CSS custom properties to modify the block styles
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////// -->
+//
+// <!--
+// <style>
+// .f8-icon {
+//   --f8-icon-color: var(--f8-blocks-def-text-color);
+//   --f8-icon-size: 32px;
+// }
+// </style>
+// -->
+//
+//
+//
+//
+// <!-- Simple icons
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////// -->
+//
+// <i class="f8-icon f8-icon--ic-framework8"></i>
+// <i class="f8-icon fa fa-check-circle"></i>
+// <i class="f8-icon u8-rounded u8-overflow-hidden"><img alt="Framework8" src="images/f8.png"></i>
+//
+// <i class="f8-icon">
+//   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 50 50">
+//     <path d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+//       <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/>
+//     </path>
+//   </svg>
+// </i>
+// <br><br>
+//
+//
+//
+//
+// <!-- Color modifiers
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////// -->
+//
+// <!-- .f8-icon--color-{whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish,inherit} -->
+//
+// <i class="f8-icon f8-icon--ic-framework8 f8-icon--color-inherit"></i>
+// <i class="f8-icon f8-icon--ic-framework8 f8-icon--color-primary"></i>
+// <i class="f8-icon f8-icon--ic-framework8 f8-icon--color-accent"></i>
+// <br><br>
+//
+//
+// <!-- .f8-icon--color-fitful-agree: This color modifier is fitful! It lets
+// the block to be whtish by default, and be blackish when it is a descendant
+// element of an element with a class attribute value that contains "dark". -->
+// <!-- .f8-icon--color-fitful-against: This color modifier is the opposite of agree fitful color modifier. -->
+//
+// <i class="f8-icon f8-icon--ic-framework8 f8-icon--color-fitful-against"></i>
+//
+//
+// <!-- NOTE: You can also completely forget about the color modifiers, and just
+// simply edit the color CSS custom properties of the block. -->
+//
+// <i style="--f8-icon-color: pink;" class="f8-icon f8-icon--ic-framework8"></i>
+// <br><br>
+//
+//
+//
+//
+// <!-- Size modifiers
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////// -->
+//
+// <!-- .f8-icon--size-{xs,sm,lg,100,inherit} -->
+//
+// <i class="f8-icon fa fa-check-circle f8-icon--size-xs"></i>
+// <i class="f8-icon fa fa-check-circle f8-icon--size-sm"></i>
+// <i class="f8-icon fa fa-check-circle f8-icon--size-lg"></i>
+// <br><br>
+//
+//
+// <!-- .f8-icon--size-100: Sets the icon's width/height/font-size to 100%, so
+// that the block can cover its container. -->
+//
+// <i class="f8-icon f8-icon--ic-framework8 f8-icon--size-100"></i>
+// <br><br>
+//
+//
+// <!-- NOTE: You can also give your custom width/height to the Icon block
+// itself while using the 100% size modifier to limit the icon size. -->
+//
+// <i style="width: 80px;" class="f8-icon f8-icon--ic-framework8 f8-icon--size-100"></i>
+// <br><br>
+//
+//
+// <!-- .f8-icon--size-inherit: Sets the icon's width/height/font-size to 1em,
+// so that the block can inherit its size from its container's font-size. -->
+//
+// <i class="f8-icon fa fa-check-circle f8-icon--size-inherit"></i>
+// <br><br>
+//
+//
+// <!-- NOTE: You can also completely forget about the size modifiers, and just
+// simply edit the size CSS custom property of the block. -->
+//
+// <i style="--f8-icon-size: 100px;" class="f8-icon f8-icon--ic-framework8"></i>
+// <br><br>
+//
+//
+//
+//
+//<!-- State modifiers
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////// -->
+//
+//<!-- These states disappear the icon -->
+//
+// <i class="f8-icon f8-icon--ic-framework8 f8-icon--state-faded-out"></i>
+// <i class="f8-icon f8-icon--ic-framework8 f8-icon--state-zoomed-out"></i>
+//
+//
+// <!-- .f8-icon--state-inner modifier is useful when you like to put another
+// icon inside another one! It's more useful when we're using the battery icon
+// and its indicators should sit inside of it. This modifier only sets the
+// icon's position to absolute so that it can gently sit at the center of its
+// parent icon. -->
+//
+// <i class="f8-icon f8-icon--ic-battery f8-icon--color-inherit f8-icon--size-xs">
+//   <i style="--f8-icon-color: #00c5a2;" class="f8-icon f8-icon--ic-battery-life-100 f8-icon--size-xs f8-icon--state-inner"></i>
+//   <i class="f8-icon f8-icon--ic-battery-charger f8-icon--color-inherit f8-icon--size-xs f8-icon--state-inner"></i>
+// </i>
+//
+//
+// <!-- .f8-icon--state-inline: This modifier is useful when you're using the
+// icon among a text. It sets `vertical-align: middle; bottom: .1em;` CSS rules
+// for the icon to sit gently among paragraphs. -->
+//
+// <p>Lorem ipsum <i class="f8-icon f8-icon--size-inherit f8-icon--state-inline f8-icon--ic-framework8"></i> dolor sit amet</p>
+// <br><br>
+//
+//
+//
+//
+// <!-- Ic modifiers
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////// -->
+//
+// <!-- .f8-icon--ic-{framework8,counter,loader-text} -->
+//
+// <!-- .f8-icon--ic-link: Uses base64 embedded SVG icon by 'Viktor Vorobyev' from thenounproject.com: https://thenounproject.com/search/?q=link&i=534671 -->
+// <!-- .f8-icon--ic-skull: Uses base64 embedded SVG icon by 'Mega Agustina' from thenounproject.com: https://thenounproject.com/search/?q=skull&i=3690407 -->
+// <!-- .f8-icon--ic-heart: Uses base64 embedded SVG icon by 'creative outlet' from thenounproject.com: https://thenounproject.com/search/?q=heart&i=585522 -->
+// <!-- .f8-icon--ic-brain: Uses base64 embedded SVG icon by 'Cassandra Cappello' from thenounproject.com: https://thenounproject.com/search/?q=brain&i=300950 -->
+// <!-- .f8-icon--ic-package: Uses base64 embedded SVG icon by 'creative outlet' from thenounproject.com: https://thenounproject.com/search/?q=box&i=585486 -->
+// <!-- .f8-icon--ic-hourglass: Uses base64 embedded SVG icon by 'Panda Icons' from thenounproject.com: https://thenounproject.com/search/?q=time&i=1835240 -->
+// <!-- .f8-icon--ic-star-empty: Uses base64 embedded SVG icon by 'hunotika' from thenounproject.com: https://thenounproject.com/search/?q=star&i=42520 -->
+// <!-- .f8-icon--ic-fire: Uses base64 embedded SVG icon by 'BomSymbols' from thenounproject.com: https://thenounproject.com/search/?q=fire&i=938835 -->
+// <!-- .f8-icon--ic-snow: Uses base64 embedded SVG icon by 'Adrien Coquet' from thenounproject.com: https://thenounproject.com/search/?q=snow&i=4374316 -->
+// <!-- .f8-icon--ic-power: Uses base64 embedded SVG icon by 'Mas Dhimas' from thenounproject.com: https://thenounproject.com/search/?q=power&i=2818950 -->
+// <!-- .f8-icon--ic-om: Uses base64 embedded SVG icon by 'Cédric Villain' from thenounproject.com: https://thenounproject.com/search/?q=om&i=58853 -->
+// <!-- .f8-icon--ic-face-satisfied: Uses base64 embedded SVG icon by 'Ben Davis' from thenounproject.com: https://thenounproject.com/search/?q=happy&i=274470 -->
+// <!-- .f8-icon--ic-face-happy: Uses base64 embedded SVG icon by 'Ben Davis' from thenounproject.com: https://thenounproject.com/search/?q=happy&i=274478 -->
+// <!-- .f8-icon--ic-face-sad: Uses base64 embedded SVG icon by 'Ben Davis' from thenounproject.com: https://thenounproject.com/search/?q=sad&i=274479 -->
+// <!-- .f8-icon--ic-face-impassive: Uses base64 embedded SVG icon by 'Ben Davis' from thenounproject.com: https://thenounproject.com/search/?q=impassive&i=274471 -->
+// <!-- .f8-icon--ic-face-angry: Uses base64 embedded SVG icon by 'Ben Davis' from thenounproject.com: https://thenounproject.com/search/?q=smashicons&i=274467 -->
+// <!-- .f8-icon--ic-face-wink: Uses base64 embedded SVG icon by 'Ben Davis' from thenounproject.com: https://thenounproject.com/search/?q=wink&i=274437 -->
+// <!-- .f8-icon--ic-calendar: Uses base64 embedded SVG icon by 'iconsphere' from thenounproject.com: https://thenounproject.com/search/?q=calendar&i=697504 -->
+//
+// <!-- .f8-icon--ic-loader-{spinner,wave,bars}: Use base64 embedded SVG icons by 'Aurer': https://codepen.io/aurer/pen/jEGbA -->
+// <!-- .f8-icon--ic-loader-{dots,puff,rings}: Use base64 embedded SVG icons by 'SamHerbert': https://github.com/SamHerbert/SVG-Loaders -->
+//
+//
+// <i class="f8-icon f8-icon--ic-framework8"></i>
+//
+// <i class="f8-icon f8-icon--ic-link"></i>
+//
+// <i class="f8-icon f8-icon--ic-skull"></i>
+// <i class="f8-icon f8-icon--ic-heart"></i>
+// <i class="f8-icon f8-icon--ic-brain"></i>
+//
+// <i class="f8-icon f8-icon--ic-package"></i>
+//
+// <i class="f8-icon f8-icon--ic-hourglass"></i>
+//
+// <i class="f8-icon f8-icon--ic-star-empty"></i>
+// <i class="f8-icon f8-icon--ic-star-full"></i>
+//
+// <i class="f8-icon f8-icon--ic-fire"></i>
+// <i class="f8-icon f8-icon--ic-snow"></i>
+//
+// <i class="f8-icon f8-icon--ic-power"></i>
+// <i class="f8-icon f8-icon--ic-sleep"></i>
+// <i class="f8-icon f8-icon--ic-awake"></i>
+//
+// <i class="f8-icon f8-icon--ic-om"></i>
+//
+// <i class="f8-icon f8-icon--ic-sound-on"></i>
+// <i class="f8-icon f8-icon--ic-sound-off"></i>
+//
+// <i class="f8-icon f8-icon--ic-print-on"></i>
+// <i class="f8-icon f8-icon--ic-print-off"></i>
+//
+// <i class="f8-icon f8-icon--ic-face-satisfied"></i>
+// <i class="f8-icon f8-icon--ic-face-happy"></i>
+// <i class="f8-icon f8-icon--ic-face-sad"></i>
+// <i class="f8-icon f8-icon--ic-face-impassive"></i>
+// <i class="f8-icon f8-icon--ic-face-angry"></i>
+// <i class="f8-icon f8-icon--ic-face-wink"></i>
+//
+// <i class="f8-icon f8-icon--ic-calendar"></i>
+//
+// <i class="f8-icon f8-icon--ic-battery"></i>
+// <i class="f8-icon f8-icon--ic-battery-charger"></i>
+// <i class="f8-icon f8-icon--ic-battery-life-100"></i> <!-- Only useful when used inside of the battery icon as an inner icon -->
+// <i class="f8-icon f8-icon--ic-battery-life-50"></i> <!-- Only useful when used inside of the battery icon as an inner icon -->
+// <i class="f8-icon f8-icon--ic-battery-life-10"></i> <!-- Only useful when used inside of the battery icon as an inner icon -->
+//
+// <i class="f8-icon f8-icon--ic-loader-text"></i>
+// <i class="f8-icon f8-icon--ic-loader-spinner"></i>
+// <i class="f8-icon f8-icon--ic-loader-wave"></i>
+// <i class="f8-icon f8-icon--ic-loader-bars"></i>
+// <i class="f8-icon f8-icon--ic-loader-dots"></i>
+// <i class="f8-icon f8-icon--ic-loader-puff"></i>
+// <i class="f8-icon f8-icon--ic-loader-rings"></i>
+//
+//
+// <!-- NOTE: If you're also using 'modernizr' inside your pages, for a better
+// user experience, .f8-icon--ic-hourglass will be shown by default when you're
+// using one of the loader SVG animation icons in browsers that do not support
+// SVG animations such as IE and old Edge. -->
+//
+//
+// <!-- The calendar icon also supports dynamic date text -->
+//
+// <i class="f8-icon f8-icon--ic-calendar" data-f8-date="29" title="December 29, 2016"></i>
+// <br><br>
+//
+//
+// <!-- The counter icon is useful when it's combined with the List block -->
+//
+// <ol class="f8-list f8-list f8-list--visual-custom">
+//   <li class="f8-list__item">
+//     <div class="f8-list__addon">
+//       <i class="f8-icon f8-icon--ic-counter"></i>
+//     </div>
+//     <div class="f8-list__main f8-list__main--pos-middle">
+//       Item One
+//     </div>
+//   </li>
+//   <li class="f8-list__item">
+//     <div class="f8-list__addon">
+//       <i class="f8-icon f8-icon--ic-counter"></i>
+//     </div>
+//     <div class="f8-list__main f8-list__main--pos-middle">
+//       Item Two
+//     </div>
+//   </li>
+// </ol>
+// <br><br>
+//
+//
+// <!-- The counter icon can also count any element that has its
+// counter-increment style value to 'f8-icon-counter'. -->
+//
+// <ol style="list-style-type: none;">
+//   <li style="counter-increment: f8-icon-counter;"><i class="f8-icon f8-icon--ic-counter"></i> Item One</li>
+//   <li style="counter-increment: f8-icon-counter;"><i class="f8-icon f8-icon--ic-counter"></i> Item Two</li>
+// </ol>
+// <br><br>
+//
+//
+//
+//
+// <!-- Let's combine modifiers together
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////// -->
+//
+// <i style="width: 60px;" class="f8-icon f8-icon--ic-framework8 f8-icon--size-100"></i>
+// <i style="width: 60px;" class="f8-icon f8-icon--ic-loader-text f8-icon--size-100"></i>
+// I <i style="--f8-icon-color: pink;" class="f8-icon f8-icon--size-inherit f8-icon--state-inline f8-icon--ic-heart"></i> YOU
+// <br><br>
+//
+//
+//
+//
+// <!-- Let's combine the block with others: Utils, Link
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////// -->
+//
+// <!-- An icon can simply be used in combination with the link block.  -->
+// <a class="f8-link f8-link--effect-simple f8-link--color-primary f8-icon fab fa-facebook f8-icon--size-sm" href="#"></a>
+// <br>
+//
+// <!-- You can use padding for the icon to force the inner SVG or IMG have some
+// more space from the edges. In our example here we've used the .u8-p utility class. -->
+// <i style="width: 100px;" class="f8-icon f8-icon--size-100 f8-icon--ic-framework8 u8-p"></i>
+// <br>
+//
+// <!-- You can also use other utility classes to stlye even font icons in different ways. -->
+// <div style="--my-size: 100px; width: var(--my-size); height: var(--my-size);" class="u8-d-flex-inline u8-bg-color-fitful-against-alpha-hover u8-transition u8-p">
+//   <i style="font-size: calc(var(--my-size) / 2)" class="f8-icon f8-icon--size-100 fa fa-user"></i>
+// </div>
+// <br>
+//
+// <i class="f8-icon f8-icon--size-xs f8-icon--color-reddish f8-icon--state-inline f8-icon--ic-star-full"></i> 5.0 (72)
+// <br>
+//
+// <p>Made with <i class="f8-icon fa fa-heart f8-icon--color-reddish f8-icon--size-inherit"></i> by <a title="Framework8" href="#" class="f8-link f8-link--color-info f8-link--effect-alpha">Framework8</a></p>
+
+@import 'variables';
+@import 'mixins';
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Custom Properties
+
+.f8-icon {
+  --f8-icon-color: #{$f8-icon-color-base};
+  --f8-icon-size: #{$f8-icon-size-base};
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Block
+
+.f8-icon {
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  position: relative;
+
+  transition: all $f8-transition-duration;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+
+  box-shadow: none;
+
+  line-height: 1;
+  vertical-align: baseline;
+
+  img,
+  svg {
+    object-fit: contain;
+  }
+
+  @include f8-icon-color($f8-icon-color);
+  @include f8-icon-size($f8-icon-size);
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Modifiers: Color
+
+.f8-icon--color-fitful-agree {
+  --f8-icon-color: #{$f8-blocks-whitish-color};
+
+  [class*="dark"] & {
+    --f8-icon-color: #{$f8-blocks-blackish-color};
+  }
+}
+
+.f8-icon--color-fitful-against {
+  --f8-icon-color: #{$f8-blocks-blackish-color};
+
+  [class*="dark"] & {
+    --f8-icon-color: #{$f8-blocks-whitish-color};
+  }
+}
+
+
+.f8-icon--color-whitish {
+  --f8-icon-color: #{$f8-blocks-whitish-color};
+}
+
+.f8-icon--color-blackish {
+  --f8-icon-color: #{$f8-blocks-blackish-color};
+}
+
+.f8-icon--color-primary {
+  --f8-icon-color: #{$f8-blocks-primary-color};
+}
+
+.f8-icon--color-accent {
+  --f8-icon-color: #{$f8-blocks-accent-color};
+}
+
+.f8-icon--color-greenish {
+  --f8-icon-color: #{$f8-blocks-greenish-color};
+}
+
+.f8-icon--color-reddish {
+  --f8-icon-color: #{$f8-blocks-reddish-color};
+}
+
+.f8-icon--color-yellowish {
+  --f8-icon-color: #{$f8-blocks-yellowish-color};
+}
+
+.f8-icon--color-bluish {
+  --f8-icon-color: #{$f8-blocks-bluish-color};
+}
+
+.f8-icon--color-inherit {
+  @include f8-icon-color-inherit();
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Modifiers: Size
+
+.f8-icon--size-xs {
+  --f8-icon-size: #{$f8-icon-size-xs};
+}
+
+.f8-icon--size-sm {
+  --f8-icon-size: #{$f8-icon-size-sm};
+}
+
+.f8-icon--size-lg {
+  --f8-icon-size: #{$f8-icon-size-lg};
+}
+
+.f8-icon--size-100 {
+  --f8-icon-size: 100%;
+}
+
+.f8-icon--size-inherit {
+  --f8-icon-size: 1em;
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Modifiers: State
+
+.f8-icon--state-inner {
+  position: absolute;
+}
+
+.f8-icon--state-inline {
+  vertical-align: middle;
+  bottom: .1em; // We push it a little bit up as well! Because the icons look better in this way.
+}
+
+.f8-icon--state-faded-out,
+.f8-icon--state-zoomed-out {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.f8-icon--state-zoomed-out {
+  transform: scale(.9, .9);
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Modifiers: Icon
+
+.f8-icon--ic-counter {
+  vertical-align: baseline;
+
+  &::before {
+    content: counter(f8-icon-counter);
+    display: inline-block;
+    font-style: normal;
+    font-size: 1rem;
+  }
+}
+
+.f8-icon--ic-framework8 {
+  background-image: $f8-icon-8;
+}
+
+
+.f8-icon--ic-link {
+  background-image: $f8-icon-link;
+}
+
+
+.f8-icon--ic-skull {
+  background-image: $f8-icon-skull;
+}
+
+.f8-icon--ic-heart {
+  background-image: $f8-icon-heart;
+}
+
+.f8-icon--ic-brain {
+  background-image: $f8-icon-brain;
+}
+
+
+.f8-icon--ic-package {
+  background-image: $f8-icon-package;
+}
+
+
+.f8-icon--ic-hourglass {
+  background-image: $f8-icon-hourglass;
+}
+
+
+.f8-icon--ic-star-empty {
+  background-image: $f8-icon-star-empty;
+}
+
+.f8-icon--ic-star-full {
+  background-image: $f8-icon-star-full;
+}
+
+
+.f8-icon--ic-fire {
+  background-image: $f8-icon-fire;
+}
+
+.f8-icon--ic-snow {
+  background-image: $f8-icon-snow;
+}
+
+
+.f8-icon--ic-power {
+  background-image: $f8-icon-power;
+}
+
+.f8-icon--ic-sleep {
+  background-image: $f8-icon-sleep;
+}
+
+.f8-icon--ic-awake {
+  background-image: $f8-icon-awake;
+}
+
+
+.f8-icon--ic-om {
+  background-image: $f8-icon-om;
+}
+
+
+.f8-icon--ic-sound-on {
+  background-image: $f8-icon-sound-on;
+}
+
+.f8-icon--ic-sound-off {
+  background-image: $f8-icon-sound-off;
+}
+
+
+.f8-icon--ic-print-on {
+  background-image: $f8-icon-print-on;
+}
+
+.f8-icon--ic-print-off {
+  background-image: $f8-icon-print-off;
+}
+
+
+.f8-icon--ic-face-satisfied {
+  background-image: $f8-icon-face-satisfied;
+}
+
+.f8-icon--ic-face-happy {
+  background-image: $f8-icon-face-happy;
+}
+
+.f8-icon--ic-face-sad {
+  background-image: $f8-icon-face-sad;
+}
+
+.f8-icon--ic-face-impassive {
+  background-image: $f8-icon-face-impassive;
+}
+
+.f8-icon--ic-face-angry {
+  background-image: $f8-icon-face-angry;
+}
+
+.f8-icon--ic-face-wink {
+  background-image: $f8-icon-face-wink;
+}
+
+
+.f8-icon--ic-calendar {
+  background-image: $f8-icon-calendar;
+
+  &::after {
+    content: attr(data-f8-date);
+    display: flex;
+    position: absolute;
+    top: 18%;
+    max-width: 110%;
+    transform: scale(.5);
+    color: inherit;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+  }
+
+  // Modifier Specific Styles: .f8-icon--size-xs, f8-icon--size-100, .f8-icon--size-inherit
+  &.f8-icon--size-xs,
+  &.f8-icon--size-100,
+  &.f8-icon--size-inherit {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+
+.f8-icon--ic-battery {
+  background-image: $f8-icon-battery-body;
+}
+
+.f8-icon--ic-battery-charger {
+  background-image: $f8-icon-battery-charger;
+}
+
+.f8-icon--ic-battery-life-100 {
+  background-image: $f8-icon-battery-life-100;
+}
+
+.f8-icon--ic-battery-life-50 {
+  background-image: $f8-icon-battery-life-50;
+}
+
+.f8-icon--ic-battery-life-10 {
+  background-image: $f8-icon-battery-life-10;
+}
+
+
+.f8-icon--ic-loader-spinner,
+.f8-icon--ic-loader-wave,
+.f8-icon--ic-loader-bars,
+.f8-icon--ic-loader-dots,
+.f8-icon--ic-loader-puff,
+.f8-icon--ic-loader-rings {
+  // We take advantage of the classes that modernizr lib provides for our HTML
+  // tag. Now if the user's browser (IE, Edge) doesn't support SVG animation,
+  // SMIL, then instead of showing the animated loading icons, show the static
+  // hourglass icon.
+  .no-smil & {
+    background-image: $f8-icon-hourglass;
+  }
+}
+
+.f8-icon--ic-loader-text {
+  background-image: $f8-icon-loader-text;
+}
+
+.f8-icon--ic-loader-spinner {
+  background-image: $f8-icon-loader-spinner;
+}
+
+.f8-icon--ic-loader-wave {
+  background-image: $f8-icon-loader-wave;
+}
+
+.f8-icon--ic-loader-bars {
+  background-image: $f8-icon-loader-bars;
+}
+
+.f8-icon--ic-loader-dots {
+  background-image: $f8-icon-loader-dots;
+}
+
+.f8-icon--ic-loader-puff {
+  background-image: $f8-icon-loader-puff;
+}
+
+.f8-icon--ic-loader-rings {
+  background-image: $f8-icon-loader-rings;
+}

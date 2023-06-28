@@ -1,0 +1,227 @@
+// Base - Normalize and default styles.
+// @copyright 2022 MyThemeIsReady. All Rights Reserved.
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Main
+
+::selection {
+  background: $selection-bg-color; // #d6edff
+  text-shadow: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;                                      // Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+}
+
+html {
+  font-family: sans-serif;                                     // Change the default font family in all browsers.
+  font-size: $font-size;                                       // NOTE: rem units are based on the font-size of the html element; so that's why we set our framework's desired font-size for the html element here.
+  line-height: 1.15;                                           // Correct the line height in all browsers.
+  -webkit-text-size-adjust: 100%;                              // Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);               // Change the default tap highlight to be completely transparent in iOS.
+  // overflow-y: scroll;                                       // Always show the scrollbar
+}
+
+body {
+  margin: 0;                                                   // Remove the margin in all browsers.
+
+  color: $text-color;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-font-smoothing: antialiased;                         // WebKit browsers
+  text-rendering: optimizeLegibility;                          // Safari and Chrome
+  -moz-osx-font-smoothing: grayscale;                          // Firefox
+  font-feature-settings: 'liga';                               // IE
+
+  background-color: $bg-color;
+}
+
+a {
+  color: $text-link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $text-link-color;
+    text-decoration: underline;
+  }
+}
+
+hr {
+  margin-top: $spacer;
+  margin-bottom: $spacer;
+  border: 0;
+  border-top: solid 1px $color-neutral-hr;
+}
+
+.rtl,
+.f8-rtl {
+  direction: rtl #{"/*!rtl:ignore*/"};
+  text-align: right #{"/*!rtl:ignore*/"};
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: calc(#{$spacer} * 2);
+  margin-bottom: calc(#{$spacer} * .5);
+
+  color: $headings-color;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+}
+
+h1 { font-size: $font-size-h1; }
+h2 { font-size: $font-size-h2; }
+h3 { font-size: $font-size-h3; }
+h4 { font-size: $font-size-h4; }
+h5 { font-size: $font-size-h5; }
+h6 { font-size: $font-size-h6; }
+
+p {
+  margin: 0 0 $spacer;
+  // overflow: hidden;                                         // To fix probable float issues
+
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: $font-family-monospace;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted $text-color;
+  text-decoration: none;
+  cursor: help;
+}
+
+address {
+  margin-bottom: $spacer;
+  font-style: normal;
+  line-height: $line-height;
+}
+
+.lead {
+  margin-bottom: $spacer;
+  font-size: calc(#{$font-size} * 1.25);
+  font-weight: 300;
+  line-height: $line-height;
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// No Animations
+
+@media screen and (prefers-reduced-motion: reduce){
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration:  0.001ms !important;
+    transition-delay: 0 !important;
+  }
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Conflict fixes
+
+// Conflict Fix: In Mdl Dialog Component, the close button's padding gets 0 because of the Bootstrap styles
+button.close {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+// Conflict Fix: In Mdl Dialog Component, the close button gets big because of the Bootstrap styles
+.close {
+  font-size: inherit;
+}
+
+// Conflict Fix: In Mdl Text Field Component, the border botton appears 5px up because of the Bootstrap styles
+label {
+  margin-bottom: 0;
+}
+
+// Conflict Fix: In Mdl Card Component (and some other places), <a> tag gets an underline because of the Bootstrap styles AND our styles here
+.mdl-mini-footer--link-list a,
+.mdl-mini-footer__link-list a,
+.mdl-mega-footer--right-section a,
+.mdl-mega-footer__right-section a,
+a.android-alt-link,
+a.android-link,
+a.mdl-navigation__link,
+a.mdl-button {
+  color: inherit;
+  text-decoration: none;
+}
+
+// Conflict Fix: In Mdl Card Component, supporting text appears small because of the Bootstrap styles
+.mdl-card__supporting-text {
+  font-size: $font-size;
+}
+
+// Conflict Fix: In Bootstrap blockquotes get '"' quotes because of the MDL styles
+blockquote {
+  &::before,
+  &::after {
+    content: '';
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+// Conflict Fix: If you're using Google Custom gcse:searchbox, its search icon and input field won't appear correctly because of the Bootstrap styles
+[class*="gsc-"] {
+  *,
+  *::after,
+  *::before {
+    box-sizing: content-box;
+  }
+
+  input,
+  button,
+  select,
+  textarea {
+    line-height: normal;
+  }
+}
