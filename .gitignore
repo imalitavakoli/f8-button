@@ -3,9 +3,7 @@ node_modules
 bower_components
 
 # compiled output
-/preview
 /.tmp
-/docs
 
 # others
 node_modules.rar

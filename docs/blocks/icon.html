@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+  <title>Icon</title>
+  <meta name="description" content="Awesome collection of CSS3 Buttons for those who love good design. All-in-One solution for any webpage. Variety of colors, effects, states, and sizes.">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/styles/vendor.min.css">
+  <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/styles/framework8.docs.min.css">
+  <link rel="stylesheet" href="../assets/styles/vendor/f8component-utils.min.css">
+<link rel="stylesheet" href="../assets/styles/vendor/f8-button.min.css">
+
+
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <script src="../assets/scripts/vendor/modernizr.min.js"></script>
+
+  <link rel="canonical" href="https://imalitavakoli.github.io/f8-button/docs/blocks/icon.html">
+  <link rel="alternate" type="application/rss+xml" title="f8-button" href="/docs/feed.xml">
+</head>
+
+
+  <body class="" data-spy="scroll" data-target="#scrollspy">
+    <!--[if lt IE 10]>
+    <div class="f8-browsehappy">
+      <div class="f8-browsehappy__modal">
+        <h1>Oh, crap!</h1>
+        <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" rel="external" target="_blank">upgrade your browser</a> to improve your experience.</p>
+      </div>
+    </div>
+    <![endif]-->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top"  id="header">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">f8-button</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse" style="font-size: 14px;">
+      <ul class="nav navbar-nav" data-sm-skip>
+        
+          
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Getting Started <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                      <li><a href="../getting-started/introduction.html">Introduction</a></li>
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+                  
+                    
+                  
+                    
+                  
+                    
+                      <li><a href="../getting-started/compatibility.html">Compatibility</a></li>
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              </ul>
+            </li>
+            
+          
+        
+          
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blocks <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                
+                  
+                    
+                      <li><a href="../blocks/browsehappy.html">Browsehappy</a></li>
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+                  
+                    
+                  
+                    
+                      <li><a href="../blocks/button.html">Button</a></li>
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                      <li><a href="../blocks/icon.html">Icon</a></li>
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              </ul>
+            </li>
+            
+          
+        
+          
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <li><a href="../utilities/utils.html">Utilities</a></li>
+                
+              
+                
+              
+            
+          
+        
+      </ul>
+
+      
+
+      
+        
+      
+        
+      
+        
+      
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+<div class="doc-header fixed-header-space-top">
+  <div class="container">
+    <h1>Icon</h1>
+    <p>
+      Some SVG icons which are embedded into the DOM automatically, so that they can be customized by CSS. It includes some useful icons which you cannot find in other places. It can also accept your own images or icons, and apply its effects on your custom SVG, GIF, or JPG images.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <article class="col-md-9">
+      <h1 id="requirements">Requirements</h1>
+
+<div class="alert alert-info" role="alert">
+<p><strong>jQuery required!</strong> Please note that the block requires <a href="https://code.jquery.com/">jQuery version 1.9.1+</a> to be included.</p>
+</div>
+
+<p>Part of the <em>Icon</em> block is in JavaScript, and all of the <strong>Framework8</strong> JavaScript blocks, including this block, require jQuery.</p>
+
+<hr />
+
+<h1 id="css-custom-properties">CSS Custom Properties</h1>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;style&gt;
+  .f8-icon {
+    --f8-icon-color: var(--f8-blocks-def-text-color);
+    --f8-icon-size: 32px;
+  }
+&lt;/style&gt;</code></pre>
+
+<hr />
+
+<h1 id="simple-icons">Simple Icons</h1>
+
+<div class="doc-example u8-curved">
+<i class="f8-icon f8-icon--ic-framework8"></i>
+<i class="f8-icon fa fa-check-circle"></i>
+<i class="f8-icon u8-rounded u8-overflow-hidden"><img alt="Framework8" src="../assets/images/f8.png" /></i>
+
+<i class="f8-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 50 50">
+    <path d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+      <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite" />
+    </path>
+  </svg>
+</i>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i class="f8-icon f8-icon--ic-framework8"&gt;&lt;/i&gt;
+&lt;i class="f8-icon fa fa-check-circle"&gt;&lt;/i&gt;
+&lt;i class="f8-icon u8-rounded u8-overflow-hidden"&gt;&lt;img alt="Framework8" src="images/f8.png"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon"&gt;
+  &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 50 50"&gt;
+    &lt;path d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z"&gt;
+      &lt;animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/&gt;
+    &lt;/path&gt;
+  &lt;/svg&gt;
+&lt;/i&gt;</code></pre>
+
+<hr />
+
+<h1 id="modifiers">Modifiers</h1>
+
+<p>There are different types of modifiers:</p>
+<ul>
+  <li>Color</li>
+  <li>Size</li>
+  <li>Effect</li>
+  <li>Ic</li>
+</ul>
+
+<h2 id="color-modifiers">Color Modifiers</h2>
+
+<p><code class="language-plaintext highlighter-rouge">.f8-icon--color-{whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish,inherit}</code></p>
+
+<div class="doc-example u8-curved">
+<i class="f8-icon f8-icon--ic-framework8 f8-icon--color-inherit"></i>
+<i class="f8-icon f8-icon--ic-framework8 f8-icon--color-primary"></i>
+<i class="f8-icon f8-icon--ic-framework8 f8-icon--color-accent"></i>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i class="f8-icon f8-icon--ic-framework8 f8-icon--color-inherit"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-framework8 f8-icon--color-primary"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-framework8 f8-icon--color-accent"&gt;&lt;/i&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.f8-icon--color-fitful-agree</code>: This color modifier is fitful! It lets the block to be whtish by default, and be blackish when it is a descendant element of an element with a class attribute value that contains “dark”. <code class="language-plaintext highlighter-rouge">.f8-icon--color-fitful-against</code>: This color modifier is the opposite of agree fitful color modifier.</p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i class="f8-icon f8-icon--ic-framework8 f8-icon--color-fitful-against"&gt;&lt;/i&gt;</code></pre>
+
+<div class="alert alert-info" role="alert">
+<p><strong>Heads up!</strong> You can also completely forget about the color modifiers, and just simply edit the color CSS custom properties of the block.</p>
+</div>
+
+<div class="doc-example u8-curved">
+<i style="--f8-icon-color: pink;" class="f8-icon f8-icon--ic-framework8"></i>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i style="--f8-icon-color: pink;" class="f8-icon f8-icon--ic-framework8"&gt;&lt;/i&gt;</code></pre>
+
+<h2 id="size-modifiers">Size Modifiers</h2>
+
+<p><code class="language-plaintext highlighter-rouge">.f8-icon--size-{xs,sm,lg,100,inherit}</code></p>
+
+<div class="doc-example u8-curved">
+<i class="f8-icon fa fa-check-circle f8-icon--size-xs"></i>
+<i class="f8-icon fa fa-check-circle f8-icon--size-sm"></i>
+<i class="f8-icon fa fa-check-circle f8-icon--size-lg"></i>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i class="f8-icon fa fa-check-circle f8-icon--size-xs"&gt;&lt;/i&gt;
+&lt;i class="f8-icon fa fa-check-circle f8-icon--size-sm"&gt;&lt;/i&gt;
+&lt;i class="f8-icon fa fa-check-circle f8-icon--size-lg"&gt;&lt;/i&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.f8-icon--size-100</code>: Sets the icon’s width/height/font-size to 100%, so that the block can cover its container.</p>
+
+<div class="doc-example u8-curved">
+<i class="f8-icon f8-icon--ic-framework8 f8-icon--size-100"></i>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i class="f8-icon f8-icon--ic-framework8 f8-icon--size-100"&gt;&lt;/i&gt;</code></pre>
+
+<div class="alert alert-info" role="alert">
+<p><strong>Heads up!</strong> You can also give your custom width/height to the Icon block itself while using the 100% size modifier to limit the icon size.</p>
+</div>
+
+<div class="doc-example u8-curved">
+<i style="width: 80px;" class="f8-icon f8-icon--ic-framework8 f8-icon--size-100"></i>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i style="width: 80px;" class="f8-icon f8-icon--ic-framework8 f8-icon--size-100"&gt;&lt;/i&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.f8-icon--size-inherit</code>: Sets the icon’s width/height/font-size to 1em, so that the block can inherit its size from its container’s font-size.</p>
+
+<div class="doc-example u8-curved">
+<i class="f8-icon fa fa-check-circle f8-icon--size-inherit"></i>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i class="f8-icon fa fa-check-circle f8-icon--size-inherit"&gt;&lt;/i&gt;</code></pre>
+
+<div class="alert alert-info" role="alert">
+<p><strong>Heads up!</strong> You can also completely forget about the size modifiers, and just simply edit the size CSS custom property of the block.</p>
+</div>
+
+<div class="doc-example u8-curved">
+<i style="--f8-icon-size: 100px;" class="f8-icon f8-icon--ic-framework8"></i>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i style="--f8-icon-size: 100px;" class="f8-icon f8-icon--ic-framework8"&gt;&lt;/i&gt;</code></pre>
+
+<h2 id="state-modifiers">State Modifiers</h2>
+
+<p>These states disappear the icon.</p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i class="f8-icon f8-icon--ic-framework8 f8-icon--state-faded-out"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-framework8 f8-icon--state-zoomed-out"&gt;&lt;/i&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.f8-icon--state-inner</code>: This modifier is useful when you like to put another icon inside another one! It’s more useful when we’re using the battery icon and its indicators should sit inside of it. This modifier only sets the icon’s position to absolute so that it can gently sit at the center of its parent icon.</p>
+
+<div class="doc-example u8-curved">
+<i class="f8-icon f8-icon--ic-battery f8-icon--color-inherit f8-icon--size-xs">
+  <i style="--f8-icon-color: #00c5a2;" class="f8-icon f8-icon--ic-battery-life-100 f8-icon--size-xs f8-icon--state-inner"></i>
+  <i class="f8-icon f8-icon--ic-battery-charger f8-icon--color-inherit f8-icon--size-xs f8-icon--state-inner"></i>
+</i>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i class="f8-icon f8-icon--ic-battery f8-icon--color-inherit f8-icon--size-xs"&gt;
+  &lt;i style="--f8-icon-color: #00c5a2;" class="f8-icon f8-icon--ic-battery-life-100 f8-icon--size-xs f8-icon--state-inner"&gt;&lt;/i&gt;
+  &lt;i class="f8-icon f8-icon--ic-battery-charger f8-icon--color-inherit f8-icon--size-xs f8-icon--state-inner"&gt;&lt;/i&gt;
+&lt;/i&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.f8-icon--state-inline</code>: This modifier is useful when you’re using the icon among a text. It sets <code class="language-plaintext highlighter-rouge">vertical-align: middle; bottom: .1em;</code> CSS rules for the icon to sit gently among paragraphs.</p>
+
+<div class="doc-example u8-curved">
+<p>Lorem ipsum <i class="f8-icon f8-icon--size-inherit f8-icon--state-inline f8-icon--ic-framework8"></i> dolor sit amet</p>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;p&gt;Lorem ipsum &lt;i class="f8-icon f8-icon--size-inherit f8-icon--state-inline f8-icon--ic-framework8"&gt;&lt;/i&gt; dolor sit amet&lt;/p&gt;</code></pre>
+
+<h2 id="ic-modifiers">Ic Modifiers</h2>
+
+<p><code class="language-plaintext highlighter-rouge">.f8-icon--ic-{framework8,counter,loader-text}</code></p>
+
+<div class="alert alert-info" role="alert">
+<p><code class="language-plaintext highlighter-rouge">.f8-icon--ic-link</code>: Uses base64 embedded SVG icon by ‘Viktor Vorobyev’ from <a href="https://thenounproject.com/search/?q=link&amp;i=534671">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-skull</code>: Uses base64 embedded SVG icon by ‘Mega Agustina’ from <a href="https://thenounproject.com/search/?q=skull&amp;i=3690407">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-heart</code>: Uses base64 embedded SVG icon by ‘creative outlet’ from <a href="https://thenounproject.com/search/?q=heart&amp;i=585522">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-brain</code>: Uses base64 embedded SVG icon by ‘Cassandra Cappello’ from <a href="https://thenounproject.com/search/?q=brain&amp;i=300950">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-package</code>: Uses base64 embedded SVG icon by ‘creative outlet’ from <a href="https://thenounproject.com/search/?q=box&amp;i=585486">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-hourglass</code>: Uses base64 embedded SVG icon by ‘Panda Icons’ from <a href="https://thenounproject.com/search/?q=time&amp;i=1835240">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-star-empty</code>: Uses base64 embedded SVG icon by ‘hunotika’ from <a href="https://thenounproject.com/search/?q=star&amp;i=42520">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-fire</code>: Uses base64 embedded SVG icon by ‘BomSymbols’ from <a href="https://thenounproject.com/search/?q=fire&amp;i=938835">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-snow</code>: Uses base64 embedded SVG icon by ‘Adrien Coquet’ from <a href="https://thenounproject.com/search/?q=snow&amp;i=4374316">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-power</code>: Uses base64 embedded SVG icon by ‘Mas Dhimas’ from <a href="https://thenounproject.com/search/?q=power&amp;i=2818950">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-om</code>: Uses base64 embedded SVG icon by ‘Cédric Villain’ from <a href="https://thenounproject.com/search/?q=om&amp;i=58853">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-face-satisfied</code>: Uses base64 embedded SVG icon by ‘Ben Davis’ from <a href="https://thenounproject.com/search/?q=happy&amp;i=274470">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-face-happy</code>: Uses base64 embedded SVG icon by ‘Ben Davis’ from <a href="https://thenounproject.com/search/?q=happy&amp;i=274478">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-face-sad</code>: Uses base64 embedded SVG icon by ‘Ben Davis’ from <a href="https://thenounproject.com/search/?q=sad&amp;i=274479">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-face-impassive</code>: Uses base64 embedded SVG icon by ‘Ben Davis’ from <a href="https://thenounproject.com/search/?q=impassive&amp;i=274471">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-face-angry</code>: Uses base64 embedded SVG icon by ‘Ben Davis’ from <a href="https://thenounproject.com/search/?q=smashicons&amp;i=274467">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-face-wink</code>: Uses base64 embedded SVG icon by ‘Ben Davis’ from <a href="https://thenounproject.com/search/?q=wink&amp;i=274437">thenounproject.com</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-calendar</code>: Uses base64 embedded SVG icon by ‘iconsphere’ from <a href="https://thenounproject.com/search/?q=calendar&amp;i=697504">thenounproject.com</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">.f8-icon--ic-loader-{spinner,wave,bars}</code>: Use base64 embedded SVG icons by <a href="https://codepen.io/aurer/pen/jEGbA">‘Aurer’</a><br />
+<code class="language-plaintext highlighter-rouge">.f8-icon--ic-loader-{dots,puff,rings}</code>: Use base64 embedded SVG icons by <a href="https://github.com/SamHerbert/SVG-Loaders">‘SamHerbert’</a></p>
+</div>
+
+<div class="doc-example u8-curved">
+<i class="f8-icon f8-icon--ic-framework8"></i>
+
+<i class="f8-icon f8-icon--ic-link"></i>
+
+<i class="f8-icon f8-icon--ic-skull"></i>
+<i class="f8-icon f8-icon--ic-heart"></i>
+<i class="f8-icon f8-icon--ic-brain"></i>
+
+<i class="f8-icon f8-icon--ic-package"></i>
+
+<i class="f8-icon f8-icon--ic-hourglass"></i>
+
+<i class="f8-icon f8-icon--ic-star-empty"></i>
+<i class="f8-icon f8-icon--ic-star-full"></i>
+
+<i class="f8-icon f8-icon--ic-fire"></i>
+<i class="f8-icon f8-icon--ic-snow"></i>
+
+<i class="f8-icon f8-icon--ic-power"></i>
+<i class="f8-icon f8-icon--ic-sleep"></i>
+<i class="f8-icon f8-icon--ic-awake"></i>
+
+<i class="f8-icon f8-icon--ic-om"></i>
+
+<i class="f8-icon f8-icon--ic-sound-on"></i>
+<i class="f8-icon f8-icon--ic-sound-off"></i>
+
+<i class="f8-icon f8-icon--ic-print-on"></i>
+<i class="f8-icon f8-icon--ic-print-off"></i>
+
+<i class="f8-icon f8-icon--ic-face-satisfied"></i>
+<i class="f8-icon f8-icon--ic-face-happy"></i>
+<i class="f8-icon f8-icon--ic-face-sad"></i>
+<i class="f8-icon f8-icon--ic-face-impassive"></i>
+<i class="f8-icon f8-icon--ic-face-angry"></i>
+<i class="f8-icon f8-icon--ic-face-wink"></i>
+
+<i class="f8-icon f8-icon--ic-calendar"></i>
+
+<i class="f8-icon f8-icon--ic-battery"></i>
+<i class="f8-icon f8-icon--ic-battery-charger"></i>
+<i class="f8-icon f8-icon--ic-battery-life-100"></i>
+<i class="f8-icon f8-icon--ic-battery-life-50"></i>
+<i class="f8-icon f8-icon--ic-battery-life-10"></i>
+
+<i class="f8-icon f8-icon--ic-loader-text"></i>
+<i class="f8-icon f8-icon--ic-loader-spinner"></i>
+<i class="f8-icon f8-icon--ic-loader-wave"></i>
+<i class="f8-icon f8-icon--ic-loader-bars"></i>
+<i class="f8-icon f8-icon--ic-loader-dots"></i>
+<i class="f8-icon f8-icon--ic-loader-puff"></i>
+<i class="f8-icon f8-icon--ic-loader-rings"></i>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i class="f8-icon f8-icon--ic-framework8"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon f8-icon--ic-link"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon f8-icon--ic-skull"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-heart"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-brain"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon f8-icon--ic-package"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon f8-icon--ic-hourglass"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon f8-icon--ic-star-empty"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-star-full"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon f8-icon--ic-fire"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-snow"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon f8-icon--ic-power"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-sleep"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-awake"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon f8-icon--ic-om"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon f8-icon--ic-sound-on"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-sound-off"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon f8-icon--ic-print-on"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-print-off"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon f8-icon--ic-face-satisfied"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-face-happy"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-face-sad"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-face-impassive"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-face-angry"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-face-wink"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon f8-icon--ic-calendar"&gt;&lt;/i&gt;
+
+&lt;i class="f8-icon f8-icon--ic-battery"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-battery-charger"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-battery-life-100"&gt;&lt;/i&gt; &lt;!-- Only useful when used inside of the battery icon as an inner icon --&gt;
+&lt;i class="f8-icon f8-icon--ic-battery-life-50"&gt;&lt;/i&gt; &lt;!-- Only useful when used inside of the battery icon as an inner icon --&gt;
+&lt;i class="f8-icon f8-icon--ic-battery-life-10"&gt;&lt;/i&gt; &lt;!-- Only useful when used inside of the battery icon as an inner icon --&gt;
+
+&lt;i class="f8-icon f8-icon--ic-loader-text"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-loader-spinner"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-loader-wave"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-loader-bars"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-loader-dots"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-loader-puff"&gt;&lt;/i&gt;
+&lt;i class="f8-icon f8-icon--ic-loader-rings"&gt;&lt;/i&gt;</code></pre>
+
+<div class="alert alert-info" role="alert">
+<p><strong>Heads up!</strong> If you’re also using <a href="https://modernizr.com/">modernizr</a> inside your pages, for a better user experience, <code class="language-plaintext highlighter-rouge">.f8-icon--ic-hourglass</code> will be shown by default when you’re using one of the loader SVG animation icons in browsers that do not support SVG animations such as IE and old Edge.</p>
+</div>
+
+<p>The calendar icon also supports dynamic date text.</p>
+
+<div class="doc-example u8-curved">
+<i class="f8-icon f8-icon--ic-calendar" data-f8-date="29" title="December 29, 2016"></i>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i class="f8-icon f8-icon--ic-calendar" data-f8-date="29" title="December 29, 2016"&gt;&lt;/i&gt;</code></pre>
+
+<p>The counter icon can also count any element that has its counter-increment style
+value to <code class="language-plaintext highlighter-rouge">f8-icon-counter</code>.</p>
+
+<div class="doc-example u8-curved">
+<ol style="list-style-type: none;">
+  <li style="counter-increment: f8-icon-counter;"><i class="f8-icon f8-icon--ic-counter"></i> Item One</li>
+  <li style="counter-increment: f8-icon-counter;"><i class="f8-icon f8-icon--ic-counter"></i> Item Two</li>
+</ol>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;ol style="list-style-type: none;"&gt;
+  &lt;li style="counter-increment: f8-icon-counter;"&gt;&lt;i class="f8-icon f8-icon--ic-counter"&gt;&lt;/i&gt; Item One&lt;/li&gt;
+  &lt;li style="counter-increment: f8-icon-counter;"&gt;&lt;i class="f8-icon f8-icon--ic-counter"&gt;&lt;/i&gt; Item Two&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+<hr />
+
+<h1 id="all-modifiers-together">All Modifiers Together</h1>
+
+<p>Now let’s combine all modifiers together to build unique and beautiful styles.</p>
+
+<div class="doc-example u8-curved">
+<i style="width: 60px;" class="f8-icon f8-icon--ic-framework8 f8-icon--size-100"></i>
+<i style="width: 60px;" class="f8-icon f8-icon--ic-loader-text f8-icon--size-100"></i>
+I <i style="--f8-icon-color: pink;" class="f8-icon f8-icon--size-inherit f8-icon--state-inline f8-icon--ic-heart"></i> YOU
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i style="width: 60px;" class="f8-icon f8-icon--ic-framework8 f8-icon--size-100"&gt;&lt;/i&gt;
+&lt;i style="width: 60px;" class="f8-icon f8-icon--ic-loader-text f8-icon--size-100"&gt;&lt;/i&gt;
+I &lt;i style="--f8-icon-color: pink;" class="f8-icon f8-icon--size-inherit f8-icon--state-inline f8-icon--ic-heart"&gt;&lt;/i&gt; YOU</code></pre>
+
+<hr />
+
+<h1 id="combine-with-other-blocks">Combine with Other Blocks</h1>
+
+<p>Now let’s combine the block with others to get even more awesome styles.</p>
+
+<p>You can use padding for the icon to force the inner SVG or IMG have some more space from the edges. In our example here we’ve used the <code class="language-plaintext highlighter-rouge">.u8-p</code> utility class.</p>
+
+<div class="doc-example u8-curved">
+<i style="width: 100px;" class="f8-icon f8-icon--size-100 f8-icon--ic-framework8 u8-p"></i>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i style="width: 100px;" class="f8-icon f8-icon--size-100 f8-icon--ic-framework8 u8-p"&gt;&lt;/i&gt;</code></pre>
+
+<p>You can also use other utility classes to style even font icons in different ways.</p>
+
+<div class="doc-example u8-curved">
+<div style="--my-size: 100px; width: var(--my-size); height: var(--my-size);" class="u8-d-flex-inline u8-bg-color-fitful-against-alpha-hover u8-transition u8-p">
+  <i style="font-size: calc(var(--my-size) / 2)" class="f8-icon f8-icon--size-100 fa fa-user"></i>
+</div>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div style="--my-size: 100px; width: var(--my-size); height: var(--my-size);" class="u8-d-flex-inline u8-bg-color-fitful-against-alpha-hover u8-transition u8-p"&gt;
+  &lt;i style="font-size: calc(var(--my-size) / 2)" class="f8-icon f8-icon--size-100 fa fa-user"&gt;&lt;/i&gt;
+&lt;/div&gt;</code></pre>
+
+<div class="doc-example u8-curved">
+<i class="f8-icon f8-icon--size-xs f8-icon--color-reddish f8-icon--state-inline f8-icon--ic-star-full"></i> 5.0 (72)
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i class="f8-icon f8-icon--size-xs f8-icon--color-reddish f8-icon--state-inline f8-icon--ic-star-full"&gt;&lt;/i&gt; 5.0 (72)</code></pre>
+
+    </article>
+    <aside class="col-md-3" style="margin-top: 70px">
+      <div class="doc-sidebar doc-sidebar--sections u8-chrome-pretty-scroll hidden-print" id="sidebar">
+        <nav id="scrollspy">
+  <ul class="nav nav-pills nav-stacked doc-nav">
+    
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+          
+          <li><a class="f8-js-smooth-scrolling" href="#requirements" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Requirements</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#css-custom-properties" data-f8-duration="1500" data-f8-easing="easeInOutExpo">CSS Custom Properties</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#simple-icons" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Simple Icons</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#modifiers" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Modifiers</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#all-modifiers-together" data-f8-duration="1500" data-f8-easing="easeInOutExpo">All Modifiers Together</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#combine-with-other-blocks" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Combine with Other Blocks</a></li>
+          
+        
+      
+    
+      
+        
+      
+    
+  </ul>
+</nav>
+
+      </div>
+    </aside>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<footer class="doc-footer" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10">
+        <p class="u8-font-size-sm u8-my">
+          Copyrights &copy; 2023
+          All Rights Reserved by imalitavakoli
+        </p>
+      </div>
+      <div class="col-sm-2">
+        <ul class="doc-list doc-list--inline u8-text-sm-end">
+          
+          <li><a href="mailto:imalitavakoli@gmail.com"><i class="fa fa-envelope"></i></a></li>
+          
+          
+          <li><a href="https://www.facebook.com/imalitavakoli" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          
+          
+          <li><a href="https://twitter.com/imalitavakoli" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+function onPageLoaded() {
+  setupSidebar();
+  firePageFunctions('fun');
+}
+
+function setupSidebar() {
+  var fixedAvailableHeight = $(window.top).height() - $('#header').outerHeight(true) - $('#footer').outerHeight(true);
+  var fullAvailableHeight = $(document).outerHeight() - $('#sidebar').offset().top - $('#footer').outerHeight(true);
+  var sidebarMaxHeight = Math.min(fixedAvailableHeight, fullAvailableHeight);
+  $('#sidebar').css('max-height', sidebarMaxHeight + 'px');
+
+  $('#sidebar').affix({
+  offset: {
+    top: function () {
+      return (this.top = $('#sidebar').offset().top - $('#header').outerHeight(true))
+    },
+    bottom: function () {
+      return (this.bottom = $('#footer').outerHeight(true))
+    }
+  }
+  });
+}
+
+function firePageFunctions(prefix) {
+  var count = 0;
+
+  while (true) {
+    count++;
+
+    if (typeof window[prefix + '_' + count.toString()] === "function") {
+      window[prefix + '_' + count.toString()]();
+    } else {
+      break;
+    }
+  }
+}
+</script>
+
+
+    <script src="../assets/scripts/vendor.min.js"></script>
+<script src="../assets/scripts/bootstrap.min.js"></script>
+<script src="../assets/scripts/framework8.docs.min.js"></script>
+<script src="../assets/scripts/vendor/f8component-utils.min.js"></script>
+
+
+
+    <script>
+    window.onload = function() {
+      PR.prettyPrint();
+
+      if (typeof onPageLoaded === "function") {
+        onPageLoaded();
+      }
+    }
+    </script>
+
+  </body>
+
+</html>

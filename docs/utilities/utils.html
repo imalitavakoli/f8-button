@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+  <title>Utilities</title>
+  <meta name="description" content="Awesome collection of CSS3 Buttons for those who love good design. All-in-One solution for any webpage. Variety of colors, effects, states, and sizes.">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/styles/vendor.min.css">
+  <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/styles/framework8.docs.min.css">
+  <link rel="stylesheet" href="../assets/styles/vendor/f8component-utils.min.css">
+<link rel="stylesheet" href="../assets/styles/vendor/f8-button.min.css">
+
+
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <script src="../assets/scripts/vendor/modernizr.min.js"></script>
+
+  <link rel="canonical" href="https://imalitavakoli.github.io/f8-button/docs/utilities/utils.html">
+  <link rel="alternate" type="application/rss+xml" title="f8-button" href="/docs/feed.xml">
+</head>
+
+
+  <body class="" data-spy="scroll" data-target="#scrollspy">
+    <!--[if lt IE 10]>
+    <div class="f8-browsehappy">
+      <div class="f8-browsehappy__modal">
+        <h1>Oh, crap!</h1>
+        <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" rel="external" target="_blank">upgrade your browser</a> to improve your experience.</p>
+      </div>
+    </div>
+    <![endif]-->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top"  id="header">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">f8-button</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse" style="font-size: 14px;">
+      <ul class="nav navbar-nav" data-sm-skip>
+        
+          
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Getting Started <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                      <li><a href="../getting-started/introduction.html">Introduction</a></li>
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+                  
+                    
+                  
+                    
+                  
+                    
+                      <li><a href="../getting-started/compatibility.html">Compatibility</a></li>
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              </ul>
+            </li>
+            
+          
+        
+          
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blocks <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                
+                  
+                    
+                      <li><a href="../blocks/browsehappy.html">Browsehappy</a></li>
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+                  
+                    
+                  
+                    
+                      <li><a href="../blocks/button.html">Button</a></li>
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                      <li><a href="../blocks/icon.html">Icon</a></li>
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                
+              </ul>
+            </li>
+            
+          
+        
+          
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <li><a href="../utilities/utils.html">Utilities</a></li>
+                
+              
+                
+              
+                
+              
+            
+          
+        
+      </ul>
+
+      
+
+      
+        
+      
+        
+      
+        
+      
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+<div class="doc-header fixed-header-space-top">
+  <div class="container">
+    <h1>Utilities</h1>
+    <p>
+      Immutable classes designed to reduce duplication. Single-purpose, and some more utility classes.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <article class="col-md-9">
+      <h1 id="color">Color</h1>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-border-color-{neutral,whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish}</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-border-color-{whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish}-2</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-border-color-{whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish}-alpha</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-border-color-fitful-agree</code>, <code class="language-plaintext highlighter-rouge">.u8-border-color-fitful-agree-{2,alpha}</code>: These color modifiers are fitful! They let the block to be whitish by default, and be blackish when it is a descendant element of an element with a class attribute value that contains “dark”. <code class="language-plaintext highlighter-rouge">.u8-border-color-fitful-against</code>, <code class="language-plaintext highlighter-rouge">.u8-border-color-fitful-against-{2,alpha}</code>: These color modifiers are the opposite of agree fitful color modifiers.</p>
+
+<div class="doc-example u8-curved">
+<div class="u8-border-color-neutral" style="border: 1px solid;">...</div>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-border-color-neutral" style="border: 1px solid;"&gt;...&lt;/div&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-bg-color-{neutral,whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish}</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-bg-color-{whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish}-2</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-bg-color-{whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish}-alpha</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-bg-color-fitful-agree</code>, <code class="language-plaintext highlighter-rouge">.u8-bg-color-fitful-agree-{2,alpha}</code>: These color modifiers are fitful! They let the block to be whitish by default, and be blackish when it is a descendant element of an element with a class attribute value that contains “dark”. <code class="language-plaintext highlighter-rouge">.u8-bg-color-fitful-against</code>, <code class="language-plaintext highlighter-rouge">.u8-bg-color-fitful-against-{2,alpha}</code>: These color modifiers are the opposite of agree fitful color modifiers.</p>
+
+<div class="alert alert-info" role="alert">
+<p><strong>Heads up!</strong> The following modifiers apply the background color ONLY on hover or active state of the element, and also when the element has <code class="language-plaintext highlighter-rouge">.active</code> or <code class="language-plaintext highlighter-rouge">.current</code> CSS classes.</p>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-bg-color-{whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish,fitful-agree,fitful-against}-2-hover</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-bg-color-{whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish,fitful-agree,fitful-against}-alpha-hover</code></p>
+</div>
+
+<div class="doc-example u8-curved">
+<div class="u8-bg-color-primary">...</div>
+<br />
+<div class="u8-bg-color-primary-2">...</div>
+<br />
+<div class="u8-bg-color-primary-alpha">...</div>
+<br />
+<div class="u8-bg-color-primary-2-hover">...</div>
+<br />
+<div class="u8-bg-color-primary-alpha-hover">...</div>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-bg-color-primary"&gt;...&lt;/div&gt;
+&lt;div class="u8-bg-color-primary-2"&gt;...&lt;/div&gt; &lt;!-- It's a little bit darker --&gt;
+&lt;div class="u8-bg-color-primary-alpha"&gt;...&lt;/div&gt;
+&lt;div class="u8-bg-color-primary-2-hover"&gt;...&lt;/div&gt;
+&lt;div class="u8-bg-color-primary-alpha-hover"&gt;...&lt;/div&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-text-color-{inherit,neutral,whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish}</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-text-color-{whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish}-2</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-text-color-fitful-agree</code>, <code class="language-plaintext highlighter-rouge">.u8-text-color-fitful-agree-2</code>: These color modifiers are fitful! They let the block to be whitish by default, and be blackish when it is a descendant element of an element with a class attribute value that contains “dark”. <code class="language-plaintext highlighter-rouge">.u8-text-color-fitful-against</code>, <code class="language-plaintext highlighter-rouge">.u8-text-color-fitful-against-2</code>: These color modifiers are the opposite of agree fitful color modifiers.</p>
+
+<div class="alert alert-info" role="alert">
+<p><strong>Heads up!</strong> The following modifiers apply the text color ONLY on hover or active state of the element, and also when the element has <code class="language-plaintext highlighter-rouge">.active</code> or <code class="language-plaintext highlighter-rouge">.current</code> CSS classes.</p>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-text-color-{whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish,fitful-agree,fitful-against}-hover</code></p>
+</div>
+
+<div class="doc-example u8-curved">
+<div class="u8-text-color-primary">...</div>
+<div class="u8-text-color-primary-2">...</div>
+<div class="u8-text-color-primary-hover">...</div>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-text-color-primary"&gt;...&lt;/div&gt;
+&lt;div class="u8-text-color-primary-2"&gt;...&lt;/div&gt; &lt;!-- It's a little bit darker --&gt;
+&lt;div class="u8-text-color-primary-hover"&gt;...&lt;/div&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-svg-color-{neutral,whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish}</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-svg-color-{whitish,blackish,primary,accent,greenish,reddish,yellowish,bluish}-2</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-svg-color-fitful-agree</code>, <code class="language-plaintext highlighter-rouge">.u8-svg-color-fitful-agree-2</code>: These color modifiers are fitful! They let the block to be whitish by default, and be blackish when it is a descendant element of an element with a class attribute value that contains “dark”. <code class="language-plaintext highlighter-rouge">.u8-svg-color-fitful-against</code>, <code class="language-plaintext highlighter-rouge">.u8-svg-color-fitful-against-2</code>: These color modifiers are the opposite of agree fitful color modifiers.</p>
+
+<div class="alert alert-info" role="alert">
+<p><strong>Heads up!</strong> The SVG color modifiers give stroke to your SVGs… So if you don’t like them to have a stroke, just remember to add <code class="language-plaintext highlighter-rouge">stroke="none"</code> to your SVG’s inner elements, just like what we did in our example below.</p>
+</div>
+
+<div class="doc-example u8-curved">
+<svg class="u8-svg-color-bluish" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+  <path fill-opacity="0.3" stroke="none" d="M 28 0 L 4 0 Q 0 0 0 4 L 0 28 Q 0 32 4 32 L 28 32 Q 32 32 32 28 L 32 4 Q 32 0 28 0 M 11.65 11.7 Q 11.65 10.15 12.8 9.05 14 7.95 16 7.95 17.9 7.95 19.1 8.95 20.25 10 20.25 11.35 20.25 12.25 19.65 13.15 19 14.1 17 15.35 19.05 16.95 19.75 17.85 20.6 19.05 20.6 20.4 20.6 22.05 19.35 23.25 18.05 24.45 16 24.45 13.75 24.45 12.45 23 11.45 21.9 11.45 20.55 11.45 19.45 12.15 18.45 12.85 17.4 14.6 16.15 12.7 14.6 12.2 13.65 11.65 12.7 11.65 11.7 M 15.15 16.6 Q 14.2 17.4 13.7 18.4 13.25 19.35 13.25 20.45 13.25 22 14.1 22.9 14.9 23.8 16.2 23.8 17.45 23.8 18.2 23.1 18.95 22.35 18.95 21.35 18.95 20.5 18.5 19.85 17.7 18.6 15.15 16.6 M 18.6 11.25 Q 18.6 10 17.9 9.3 17.2 8.6 16 8.6 14.85 8.6 14.1 9.3 13.35 10 13.35 10.9 13.35 11.55 13.65 12.15 13.95 12.75 14.5 13.3 L 16.45 14.9 Q 17.85 13.65 18.25 12.9 18.6 12.15 18.6 11.25 Z" />
+</svg>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;svg class="u8-svg-color-bluish" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"&gt;
+  &lt;path fill-opacity="0.3" stroke="none" d="M 28 0 L 4 0 Q 0 0 0 4 L 0 28 Q 0 32 4 32 L 28 32 Q 32 32 32 28 L 32 4 Q 32 0 28 0 M 11.65 11.7 Q 11.65 10.15 12.8 9.05 14 7.95 16 7.95 17.9 7.95 19.1 8.95 20.25 10 20.25 11.35 20.25 12.25 19.65 13.15 19 14.1 17 15.35 19.05 16.95 19.75 17.85 20.6 19.05 20.6 20.4 20.6 22.05 19.35 23.25 18.05 24.45 16 24.45 13.75 24.45 12.45 23 11.45 21.9 11.45 20.55 11.45 19.45 12.15 18.45 12.85 17.4 14.6 16.15 12.7 14.6 12.2 13.65 11.65 12.7 11.65 11.7 M 15.15 16.6 Q 14.2 17.4 13.7 18.4 13.25 19.35 13.25 20.45 13.25 22 14.1 22.9 14.9 23.8 16.2 23.8 17.45 23.8 18.2 23.1 18.95 22.35 18.95 21.35 18.95 20.5 18.5 19.85 17.7 18.6 15.15 16.6 M 18.6 11.25 Q 18.6 10 17.9 9.3 17.2 8.6 16 8.6 14.85 8.6 14.1 9.3 13.35 10 13.35 10.9 13.35 11.55 13.65 12.15 13.95 12.75 14.5 13.3 L 16.45 14.9 Q 17.85 13.65 18.25 12.9 18.6 12.15 18.6 11.25 Z"/&gt;
+&lt;/svg&gt;</code></pre>
+
+<hr />
+
+<h1 id="positioning">Positioning</h1>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-pos-{r,a,f}</code></p>
+
+<p>Set an element’s <code class="language-plaintext highlighter-rouge">position</code> to <code class="language-plaintext highlighter-rouge">relative</code>, <code class="language-plaintext highlighter-rouge">absolute</code>, or <code class="language-plaintext highlighter-rouge">fixed</code> values.</p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-pos-f"&gt;...&lt;/div&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-{t,b,s,e}-{0,50,100} </code></p>
+
+<p>Easily arrange <code class="language-plaintext highlighter-rouge">absolute</code> positioned elements with the edge positioning utilities.</p>
+
+<div class="alert alert-info" role="alert">
+<p><strong>Heads up!</strong> <code class="language-plaintext highlighter-rouge">.u8-{s,e}-{0,50,100}</code> modifiers refer to ‘Start’ and ‘End’. ‘Start’ means left in LTR and right in RTL documents. ‘End’ means right in LTR and left in RTL documents.</p>
+</div>
+
+<div class="doc-example u8-curved">
+<div class="u8-pos-r" style="width:100%; height: 200px; background-color: #eee;">
+  <div class="u8-pos-a u8-t-0 u8-e-0" style="width: 2rem; height: 2rem; background-color: #333333;"></div>
+  <div class="u8-pos-a u8-b-0 u8-s-0" style="width: 2rem; height: 2rem; background-color: #333333;"></div>
+  <div class="u8-pos-a u8-b-50 u8-e-50" style="width: 2rem; height: 2rem; background-color: #333333;"></div>
+  <div class="u8-pos-a u8-t-50 u8-s-50" style="width: 2rem; height: 2rem; background-color: #333333;"></div>
+</div>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-pos-r" style="width:100%; height: 200px; background-color: #eee;"&gt;
+  &lt;div class="u8-pos-a u8-t-0 u8-e-0" style="width: 2rem; height: 2rem; background-color: #333333;"&gt;&lt;/div&gt;
+  &lt;div class="u8-pos-a u8-b-0 u8-s-0" style="width: 2rem; height: 2rem; background-color: #333333;"&gt;&lt;/div&gt;
+  &lt;div class="u8-pos-a u8-b-50 u8-e-50" style="width: 2rem; height: 2rem; background-color: #333333;"&gt;&lt;/div&gt;
+  &lt;div class="u8-pos-a u8-t-50 u8-s-50" style="width: 2rem; height: 2rem; background-color: #333333;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<p>Easily center <code class="language-plaintext highlighter-rouge">absolute</code> positioned elements with the transform utilities.</p>
+
+<div class="doc-example u8-curved">
+<div class="u8-pos-r" style="width:100%; height: 200px; background-color: #eee;">
+  <div class="u8-pos-a u8-t-0 u8-s-100 u8-trans-middle" style="width: 2rem; height: 2rem; background-color: #333333;"></div>
+  <div class="u8-pos-a u8-t-50 u8-e-0 u8-trans-middle-y" style="width: 2rem; height: 2rem; background-color: #333333;"></div>
+  <div class="u8-pos-a u8-t-0 u8-s-50 u8-trans-middle-x" style="width: 2rem; height: 2rem; background-color: #333333;"></div>
+</div>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-pos-r" style="width:100%; height: 200px; background-color: #eee;"&gt;
+  &lt;div class="u8-pos-a u8-t-0 u8-s-100 u8-trans-middle" style="width: 2rem; height: 2rem; background-color: #333333;"&gt;&lt;/div&gt;
+  &lt;div class="u8-pos-a u8-t-50 u8-e-0 u8-trans-middle-y" style="width: 2rem; height: 2rem; background-color: #333333;"&gt;&lt;/div&gt;
+  &lt;div class="u8-pos-a u8-t-0 u8-s-50 u8-trans-middle-x" style="width: 2rem; height: 2rem; background-color: #333333;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<div class="doc-example u8-curved">
+<button type="button" class="u8-pos-r u8-bg-color-blackish u8-text-color-whitish u8-u8-curved">
+  Marker <svg width="1.5rem" height="1.5rem" viewBox="0 0 16 16" class="u8-pos-a u8-t-100 u8-s-50 u8-trans-middle u8-svg-color-blackish" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" /></svg>
+</button>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;button type="button" class="u8-pos-r u8-bg-color-blackish u8-text-color-whitish u8-u8-curved"&gt;
+  Marker &lt;svg width="1.5rem" height="1.5rem" viewBox="0 0 16 16" class="u8-pos-a u8-t-100 u8-s-50 u8-trans-middle u8-svg-color-blackish" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path stroke="none" d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/&gt;&lt;/svg&gt;
+&lt;/button&gt;</code></pre>
+
+<hr />
+
+<h1 id="dimensions">Dimensions</h1>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-w-{25,50,75,100,auto,100v}</code><br />
+<code class="language-plaintext highlighter-rouge">.u8-w-{sm,md,lg,xl}-{25,50,75,100,auto,100v}</code></p>
+
+<p>Set an element’s <code class="language-plaintext highlighter-rouge">width</code> to <code class="language-plaintext highlighter-rouge">25%</code>, <code class="language-plaintext highlighter-rouge">50%</code>, <code class="language-plaintext highlighter-rouge">75%</code>, <code class="language-plaintext highlighter-rouge">100%</code>, <code class="language-plaintext highlighter-rouge">auto</code>, or <code class="language-plaintext highlighter-rouge">100vw</code> values.</p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-w-100" style="background-color: #eee;"&gt;...&lt;/div&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-h-{25,50,75,100,auto,100v}</code><br />
+<code class="language-plaintext highlighter-rouge">.u8-h-{sm,md,lg,xl}-{25,50,75,100,auto,100v}</code></p>
+
+<p>Set an element’s <code class="language-plaintext highlighter-rouge">height</code> to <code class="language-plaintext highlighter-rouge">25%</code>, <code class="language-plaintext highlighter-rouge">50%</code>, <code class="language-plaintext highlighter-rouge">75%</code>, <code class="language-plaintext highlighter-rouge">100%</code>, <code class="language-plaintext highlighter-rouge">auto</code>, or <code class="language-plaintext highlighter-rouge">100vh</code> values.</p>
+
+<div class="alert alert-info" role="alert">
+<p><strong>Heads up!</strong> These height modifiers are mostly useful for items of a <code class="language-plaintext highlighter-rouge">flex-box</code> displayed element.</p>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-h-100" style="background-color: #eee;"&gt;...&lt;/div&gt;</code></pre>
+
+<hr />
+
+<h1 id="margin">Margin</h1>
+
+<p>Center an element</p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-mx-auto"&gt;...&lt;/div&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-m</code>, <code class="language-plaintext highlighter-rouge">.u8-m-{0,xs,sm,lg,xl}</code></p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-m-0"&gt;...&lt;/div&gt; &lt;!-- Set the margin of all sides to 0 or more. --&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-m{t,e,b,s,x,y}</code>, <code class="language-plaintext highlighter-rouge">.u8-m{t,e,b,s,x,y}-{0,sm,lg,xl}</code></p>
+
+<div class="alert alert-info" role="alert">
+<p><strong>Heads up!</strong> ‘s’ (start) means left in LTR and right in RTL documents. ‘e’ (end) means vice versa.</p>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-mt-0"&gt;...&lt;/div&gt;  &lt;!-- Set the margin of ONLY one side to 0 or more. --&gt;
+&lt;div class="u8-mt u8-mb-xl"&gt;...&lt;/div&gt;</code></pre>
+
+<hr />
+
+<h1 id="padding">Padding</h1>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-p</code>, <code class="language-plaintext highlighter-rouge">.u8-p-{0,xs,sm,lg,xl}</code></p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-p-0"&gt;...&lt;/div&gt; &lt;!-- Set the margin of all sides to 0 or more. --&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-p{t,e,b,s,x,y}</code>, <code class="language-plaintext highlighter-rouge">.u8-p{t,e,b,s,x,y}-{0,sm,lg,xl}</code></p>
+
+<div class="alert alert-info" role="alert">
+<p><strong>Heads up!</strong> ‘s’ (start) means left in LTR and right in RTL documents. ‘e’ (end) means vice versa.</p>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-pt-0"&gt;...&lt;/div&gt;  &lt;!-- Set the margin of ONLY one side to 0 or more. --&gt;
+&lt;div class="u8-pt u8-pb-xl"&gt;...&lt;/div&gt;</code></pre>
+
+<hr />
+
+<h1 id="bg--border">Bg &amp; Border</h1>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-bg-none"&gt;...&lt;/div&gt;
+
+&lt;div class="u8-border-none"&gt;...&lt;/div&gt;
+&lt;div class="u8-border-outline"&gt;...&lt;/div&gt;
+&lt;div class="u8-border-light"&gt;...&lt;/div&gt;
+
+&lt;div class="u8-border-radius-0"&gt;...&lt;/div&gt;
+&lt;div class="u8-u8-curved"&gt;...&lt;/div&gt;
+&lt;div class="u8-rounded"&gt;...&lt;/div&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-{u8-curved,rounded}-{t,b,s,e}</code></p>
+
+<div class="alert alert-info" role="alert">
+<p><strong>Heads up!</strong> <code class="language-plaintext highlighter-rouge">.u8-{u8-curved,rounded}-{s,e}</code> modifiers refer to ‘Start’ and ‘End’. ‘Start’ means left in LTR and right in RTL documents. ‘End’ means right in LTR and left in RTL documents.</p>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-u8-curved-t"&gt;...&lt;/div&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-bg-filter-{blur,grayscale,sepia,blur-grayscale,blur-sepia}</code></p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-bg-filter-blur"&gt;...&lt;/div&gt;</code></pre>
+
+<hr />
+
+<h1 id="text">Text</h1>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-font-weight-light"&gt;...&lt;/div&gt;
+&lt;div class="u8-font-weight-normal"&gt;...&lt;/div&gt;
+&lt;div class="u8-font-weight-bold"&gt;...&lt;/div&gt;
+&lt;div class="u8-font-italic"&gt;...&lt;/div&gt;
+
+&lt;div class="u8-text-decoration-none"&gt;...&lt;/div&gt;
+
+&lt;div class="u8-text-shadow-none"&gt;...&lt;/div&gt;
+&lt;div class="u8-text-shadow"&gt;...&lt;/div&gt;</code></pre>
+
+<p>Set white-space to nowrap.</p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div style="display: table;"&gt;
+  &lt;div class="u8-text-nowrap" style="display: table-cell; width: 1%;"&gt;Hello World!&lt;/div&gt;
+  &lt;div&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-text-truncate"&gt;...&lt;/div&gt;
+
+&lt;div class="u8-text-lowercase"&gt;...&lt;/div&gt;
+&lt;div class="u8-text-uppercase"&gt;...&lt;/div&gt;
+&lt;div class="u8-text-capitalize"&gt;...&lt;/div&gt;
+
+&lt;div class="u8-text-hide"&gt;...&lt;/div&gt; &lt;!-- Replace an element's text content with a background image. --&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-font-size-base</code>: Sets <code class="language-plaintext highlighter-rouge">font-size</code> and <code class="language-plaintext highlighter-rouge">line-height</code>based on the blocks’ bases.<br />
+<code class="language-plaintext highlighter-rouge">.u8-font-size-{sm,lg}</code></p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-font-size-lg"&gt;...&lt;/div&gt;</code></pre>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-text-justify"&gt;...&lt;/div&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-text-{left,right,center}</code></p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-text-start"&gt;...&lt;/div&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-text-{sm,md,lg,xl}-{left,right,center}</code></p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-text-sm-start"&gt;...&lt;/div&gt;</code></pre>
+
+<hr />
+
+<h1 id="box-utilities">Box utilities</h1>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-opacity-base"&gt;...&lt;/div&gt;
+
+&lt;div class="u8-opacity-100"&gt;...&lt;/div&gt;
+&lt;div class="u8-opacity-90"&gt;...&lt;/div&gt;
+&lt;div class="u8-opacity-80"&gt;...&lt;/div&gt;
+&lt;div class="u8-opacity-60"&gt;...&lt;/div&gt;
+&lt;div class="u8-opacity-40"&gt;...&lt;/div&gt;
+&lt;div class="u8-opacity-20"&gt;...&lt;/div&gt;
+
+&lt;div class="u8-box-shadow-none"&gt;...&lt;/div&gt;
+&lt;div class="u8-box-shadow"&gt;...&lt;/div&gt;
+&lt;div class="u8-box-shadow-2"&gt;...&lt;/div&gt;
+&lt;div class="u8-box-shadow-inset"&gt;...&lt;/div&gt;
+&lt;div class="u8-box-shadow-inset-2"&gt;...&lt;/div&gt;
+
+&lt;div class="u8-overflow-auto"&gt;...&lt;/div&gt;
+&lt;div class="u8-overflow-hidden"&gt;...&lt;/div&gt;
+&lt;div class="u8-overflow-visible"&gt;...&lt;/div&gt;
+&lt;div class="u8-overflow-scroll"&gt;...&lt;/div&gt;
+&lt;div class="u8-overflow-y-scroll"&gt;...&lt;/div&gt;
+&lt;div class="u8-overflow-x-scroll"&gt;...&lt;/div&gt;
+&lt;div class="u8-overflow-y-auto"&gt;...&lt;/div&gt;
+&lt;div class="u8-overflow-x-auto"&gt;...&lt;/div&gt;
+
+&lt;div class="u8-hidden"&gt;...&lt;/div&gt;
+&lt;div class="u8-show"&gt;...&lt;/div&gt;
+&lt;div class="u8-invisible"&gt;...&lt;/div&gt;
+
+&lt;img class="u8-img-responsive" src="" alt="" /&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-img-{contain,cover}</code></p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-img-contain"&gt;...&lt;/div&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-img-{sm,md,lg,xl}-{contain,cover}</code></p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-img-sm-cover"&gt;...&lt;/div&gt;</code></pre>
+
+<hr />
+
+<h1 id="state--animated-utilities">State &amp; Animated Utilities</h1>
+
+<div class="doc-example u8-curved">
+<i class="fa fa-angle-down u8-p u8-hover-box-shadow"></i>
+<i class="fa fa-angle-down u8-p u8-hover-box-shadow-2"></i>
+<i class="fa fa-angle-down u8-p u8-hover-scaleup-1"></i>
+<i class="fa fa-angle-down u8-p u8-hover-scaledown-1"></i>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i class="fa fa-angle-down u8-p u8-hover-box-shadow"&gt;&lt;/i&gt;
+&lt;i class="fa fa-angle-down u8-p u8-hover-box-shadow-2"&gt;&lt;/i&gt;
+&lt;i class="fa fa-angle-down u8-p u8-hover-scaleup-1"&gt;&lt;/i&gt;
+&lt;i class="fa fa-angle-down u8-p u8-hover-scaledown-1"&gt;&lt;/i&gt;</code></pre>
+
+<div class="alert alert-info" role="alert">
+<p><strong>Heads up!</strong> <code class="language-plaintext highlighter-rouge">.u8-state-*</code> utilities are better to be used with <code class="language-plaintext highlighter-rouge">.u8-transition</code> modifier. Because when they are removed by JavaScript, <code class="language-plaintext highlighter-rouge">.u8-transition</code> modifier keeps it smooth with animation when the element is returning to its initial state.</p>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;i class="fa fa-angle-down u8-p u8-transition u8-state-rotated-90"&gt;&lt;/i&gt;
+&lt;i class="fa fa-angle-down u8-p u8-transition u8-state-rotated-180"&gt;&lt;/i&gt;
+&lt;i class="fa fa-angle-down u8-p u8-transition u8-state-flipped-y"&gt;&lt;/i&gt;
+&lt;i class="fa fa-angle-down u8-p u8-transition u8-state-flipped-x"&gt;&lt;/i&gt;</code></pre>
+
+<hr />
+
+<h1 id="utilities">Utilities</h1>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-pointer-events-none"&gt;...&lt;/div&gt;
+&lt;div class="u8-line-height-normal"&gt;...&lt;/div&gt;
+&lt;div class="u8-line-height-0"&gt;...&lt;/div&gt;
+&lt;div class="u8-z-index-1"&gt;...&lt;/div&gt;
+
+&lt;div class="u8-v-align-middle"&gt;...&lt;/div&gt;
+&lt;div class="u8-v-align-baseline"&gt;...&lt;/div&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-transition</code> adds transitions to all of the block’s properties with .3s duration.</p>
+
+<div class="doc-example u8-curved">
+<a class="u8-transition u8-text-decoration-none u8-text-color-whitish  u8-bg-color-primary u8-bg-color-primary-2-hover u8-p" href="#" role="button" style="display: inline-block;">Link</a>
+</div>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;a class="u8-transition u8-text-decoration-none u8-text-color-whitish  u8-bg-color-primary u8-bg-color-primary-2-hover u8-p" href="#" role="button" style="display: inline-block;"&gt;Link&lt;/a&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-transition-none</code> removes all transitions from a block</p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;a class="u8-transition-none f8-button" href="#" role="button"&gt;Link&lt;/a&gt; &lt;!-- Used Button Block --&gt;</code></pre>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-pull-left"&gt;...&lt;/div&gt;
+&lt;div class="u8-pull-right"&gt;...&lt;/div&gt;
+
+&lt;div class="u8-center-block"&gt;...&lt;/div&gt;
+
+&lt;!-- Makes the element's scrollbars pretty in Google Chrome browser --&gt;
+&lt;div class="u8-chrome-pretty-scroll"&gt;...&lt;/div&gt;
+
+&lt;!-- Hide an element to all devices except screen readers --&gt;
+&lt;div class="u8-sr-only"&gt;...&lt;/div&gt;
+&lt;div class="u8-sr-only u8-sr-only-focusable"&gt;...&lt;/div&gt;
+
+&lt;div class="u8-clearfix"&gt;...&lt;/div&gt;</code></pre>
+
+<hr />
+
+<h1 id="responsive-utilities">Responsive utilities</h1>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-d-{none,inline,inline-block,block,table,table-cell,flex,inline-flex}</code></p>
+
+<p>Responsive variations also exist for every single display utility class.<br />
+<code class="language-plaintext highlighter-rouge">.u8-d-{sm,md,lg-xl}-{none,inline,inline-block,block,table,table-cell,flex,inline-flex}</code></p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-d-none"&gt;...&lt;/div&gt; &lt;!-- The element is display none in all devices. --&gt;
+&lt;div class="u8-d-md-none"&gt;...&lt;/div&gt; &lt;!-- The element is display none in medium devices and above. --&gt;</code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">.u8-d-print-{block,inline,inline-block,none}</code></p>
+
+<pre class="prettyprint f8-code-prettify--theme-dark u8-text-nowrap u8-curved u8-font-size-sm u8-chrome-pretty-scroll"><code>&lt;div class="u8-d-print-block"&gt;...&lt;/div&gt;</code></pre>
+
+    </article>
+    <aside class="col-md-3" style="margin-top: 70px">
+      <div class="doc-sidebar doc-sidebar--sections u8-chrome-pretty-scroll hidden-print" id="sidebar">
+        <nav id="scrollspy">
+  <ul class="nav nav-pills nav-stacked doc-nav">
+    
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+          
+          <li><a class="f8-js-smooth-scrolling" href="#color" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Color</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#positioning" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Positioning</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#dimensions" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Dimensions</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#margin" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Margin</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#padding" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Padding</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#bg--border" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Bg & Border</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#text" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Text</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#box-utilities" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Box utilities</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#state--animated-utilities" data-f8-duration="1500" data-f8-easing="easeInOutExpo">State & Animated Utilities</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#utilities" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Utilities</a></li>
+          
+          <li><a class="f8-js-smooth-scrolling" href="#responsive-utilities" data-f8-duration="1500" data-f8-easing="easeInOutExpo">Responsive utilities</a></li>
+          
+        
+      
+    
+  </ul>
+</nav>
+
+      </div>
+    </aside>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<footer class="doc-footer" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10">
+        <p class="u8-font-size-sm u8-my">
+          Copyrights &copy; 2023
+          All Rights Reserved by imalitavakoli
+        </p>
+      </div>
+      <div class="col-sm-2">
+        <ul class="doc-list doc-list--inline u8-text-sm-end">
+          
+          <li><a href="mailto:imalitavakoli@gmail.com"><i class="fa fa-envelope"></i></a></li>
+          
+          
+          <li><a href="https://www.facebook.com/imalitavakoli" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          
+          
+          <li><a href="https://twitter.com/imalitavakoli" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+function onPageLoaded() {
+  setupSidebar();
+  firePageFunctions('fun');
+}
+
+function setupSidebar() {
+  var fixedAvailableHeight = $(window.top).height() - $('#header').outerHeight(true) - $('#footer').outerHeight(true);
+  var fullAvailableHeight = $(document).outerHeight() - $('#sidebar').offset().top - $('#footer').outerHeight(true);
+  var sidebarMaxHeight = Math.min(fixedAvailableHeight, fullAvailableHeight);
+  $('#sidebar').css('max-height', sidebarMaxHeight + 'px');
+
+  $('#sidebar').affix({
+  offset: {
+    top: function () {
+      return (this.top = $('#sidebar').offset().top - $('#header').outerHeight(true))
+    },
+    bottom: function () {
+      return (this.bottom = $('#footer').outerHeight(true))
+    }
+  }
+  });
+}
+
+function firePageFunctions(prefix) {
+  var count = 0;
+
+  while (true) {
+    count++;
+
+    if (typeof window[prefix + '_' + count.toString()] === "function") {
+      window[prefix + '_' + count.toString()]();
+    } else {
+      break;
+    }
+  }
+}
+</script>
+
+
+    <script src="../assets/scripts/vendor.min.js"></script>
+<script src="../assets/scripts/bootstrap.min.js"></script>
+<script src="../assets/scripts/framework8.docs.min.js"></script>
+<script src="../assets/scripts/vendor/f8component-utils.min.js"></script>
+
+
+
+    <script>
+    window.onload = function() {
+      PR.prettyPrint();
+
+      if (typeof onPageLoaded === "function") {
+        onPageLoaded();
+      }
+    }
+    </script>
+
+  </body>
+
+</html>
