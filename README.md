@@ -1,6 +1,6 @@
 The "**f8-button**" is an awesome collection of CSS3 Buttons for those who love good design. All-in-One solution for any webpage. Variety of colors, effects, states, and sizes.
 
-[Preview the buttons here](https://imalitavakoli.github.io/f8-button/).  
+[Preview the buttons here](https://imalitavakoli.github.io/f8-button/preview/).  
 [Read the documentations here](https://imalitavakoli.github.io/f8-button/docs/).
 
 *f8-button* is part of my personal custom Front-end Framework (FRAMEWORK 8) which has infinity (8) abilities! Because buttons are needed everywhere and some of my friends suggested why not to share such full-featured library with the world, so here we are! I decided to share not only the buttons, but also some other helpful blocks of my framework (f8-button block + some other useful blocks).
