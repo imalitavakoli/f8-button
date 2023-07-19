@@ -48,12 +48,12 @@ Here I also included some more helpful blocks along side of the '*f8-button*' bl
 If you don't like modular SASS and ES6+ files and like the old-school of the things ready to be used in simple projects as well, then you can find the ready-to-use *.css* & *.js* files here:
 
 - `dist/scripts/f8component-utils.min.js`
-- `dist/styles/f8-button.js`
-- `dist/styles/f8-button.min.js`
-- `dist/styles/f8component-utils.js`
-- `dist/styles/f8component-utils.min.js`
-- `dist/styles/f8component-utils.rtl.js`
-- `dist/styles/f8component-utils.rtl.min.js`
+- `dist/styles/f8-button.css`
+- `dist/styles/f8-button.min.css`
+- `dist/styles/f8component-utils.css`
+- `dist/styles/f8component-utils.min.css`
+- `dist/styles/f8component-utils.rtl.css`
+- `dist/styles/f8component-utils.rtl.min.css`
 
 
 
